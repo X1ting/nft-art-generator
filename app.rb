@@ -9,7 +9,7 @@ Image = Struct.new(:file, :name, :rarity)
 
 ### Given rarity 20%
 ### Generate random number from 0...100
-### If rarity is in range, it success
+### If (100 - rarity) is in range, it success
 def kawabanga?(rarity)
   (0..rand(0...100)).include?(100 - rarity)
 end
